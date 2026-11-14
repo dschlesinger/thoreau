@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const INTERVAL_MS = 30_000;
-const CLIP_MS = 4_000;
+const CLIP_MS = 8_000;
 
 type Label = "locked-in" | "brain-rot";
 type Upload = { key: string; label: Label; status: "uploading" | "done" | "failed" };
@@ -112,7 +112,7 @@ export default function Home() {
     <main className="mx-auto flex min-h-screen max-w-md flex-col gap-6 p-6 pb-32">
       <h1 className="text-2xl font-semibold">Brain rot detector</h1>
       <p className="text-sm text-neutral-500">
-        Records 4 seconds of your screen every 30 seconds and uploads it. Keep this tab open.
+        Records 8 seconds of your screen every 30 seconds and uploads it. Keep this tab open.
       </p>
 
       <input
